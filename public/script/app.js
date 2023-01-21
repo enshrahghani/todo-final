@@ -47,9 +47,13 @@ window.get = function () {
         for (var i = 0; i < Todos.length; i++) {
             var app = Todos[i]
             console.log(app.todo)
-            render.innerHTML += `<p class="text-center d-flex justify-content-evenly ms-3 pt-4">TODO : ${app.todo}   <button onclick="TodoUpdate('${app.id}')" class="btn bg-success p-2 px-5  text-light">EDIT</button>
-    <button onclick="Tododel('${app.id}')" class="btn bg-danger text-center p-2 px-5  text-light">DELETE</button> </p> <br/>`
-
+            render.innerHTML += `
+            <li> <h3 class="ms-3 pt-4">${app.todo}
+            <span class="d-flex flex-row-reverse">
+            <button onclick="TodoUpdate('${app.id}')" class="btn bg-warning text-black mx-2 p-2 px-5 text-light">EDIT</button>
+            <button onclick="Tododel('${app.id}')" class="btn bg-info text-black text-center p-2 px-5  text-light">DELETE</button> 
+            </span>
+            </h3> </li> <br/>`
         }
         var a = document.getElementById('a').value = ""
 

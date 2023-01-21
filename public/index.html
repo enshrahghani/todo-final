@@ -10,16 +10,16 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
-<body class="bg-dark text-light">
+<body class="bg-light text-dark">
 
-    <div class="text-center">
-        <h1 class="text-info">TODO APP</h1>
-        <input type="text" name="" id="a" class="p-2 rounded  px-5 w-50 mt-5 mx-2">
-        <button class="btn bg-success p-2 px-3  text-light" onclick="add()">ADD</button>
-        <button class="btn bg-danger p-2 px-4 mx-2 text-light" onclick="deleteAll()">DELETE ALL</button>
+    <h1 class="text-black text-center bg-secondary p-5">TODO APP</h1>
+    <div class="container">
+        <input type="text" name="" id="a" class="p-2 rounded px-5 w-20 mt-5 mx-2">
+        <button class="btn btn-outline-success p-2 px-3" onclick="add()">ADD</button>
+        <button class="btn btn-outline-primary p-2 px-4 mx-2" onclick="deleteAll()">DELETE ALL</button>
 
     </div>
-    <p id="render"></p>
+    <ol id="render" class="container"></ol>
 
     <script src="https://www.googletagmanager.com/gtag/js?l=dataLayer&amp;id=G-W8Z1EVZS6T" async=""></script>
     <script type="module" src="script/app.js"></script>
